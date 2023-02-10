@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Tour Booking Form </title>
+</head>
+<style>
+    h1{
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    
+    form{
+        text-align: center;
+        box-sizing: content-box;
+        padding: 20px; 
+    }
+    
+    *{
+        background-color: bisque;
+    }
+    input{
+       padding: 15px;
+       font-size: large;
+      
+    }
+    
+    section{
+        padding: 15px;
+        font-size: large;
+    }
+    option{
+        padding: 15px;
+        font-size: large;
+    }
+    
+</style>
+<body>
+   
+    <form action="">
+       
+        
+        <h1>Tour Booking Form</h1>
+        <p>Required Fileds are followed by *</p>
+        <h2>Contact Information</h2>
+        <p>Full Name:*<input type="text" name="name" required> </p>
+    
+        <p>No. of People: <input type="number" id="number"></p>
+        <p>Email:* <input type="email" name="email" id="email" required></p>
+        <p>Phone:* <input type="password" name="phone" id="phone" required></p>
+
+        <p>Departure Date/Time  *<input type="datetime-local" name="date/time" id="date/time" required></p>
+        <p>Return Date/Time *<input type="datetime-local" name="date/time" id="date/time" required></p>
+        
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:*
+            <select name="card_type" id="card_type" required>
+            <option value="">--Select a card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number* <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
+        </p>
+        <p>CVV * <input type="password" name="cvv" id="cvv" required> </p>
+        <input type="submit" value="Pay Now ">
+       
+
+    </form>
+  
+</body>
+</html>
